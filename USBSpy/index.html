@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Dellagd" />
+  
+	<link type="text/css" rel="stylesheet" href="./index.css" media="all" />
+  
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/highcharts.js"></script>
+	
+	<script type="text/javascript" src="./index.js"></script>
+	
+	<script type="text/javascript" src="./js/chart.js"></script>
+	<script type="text/javascript" src="./js/serial.js"></script>
+    <script type="text/javascript" src="./js/serial_backend.js"></script>
+    <script type="text/javascript" src="./js/port_handler.js"></script>
+    <script type="text/javascript" src="./js/port_usage.js"></script>
+    <script type="text/javascript" src="./js/gui.js"></script>
+    <script type="text/javascript" src="./js/data_storage.js"></script>
+    <script type="text/javascript" src="./js/msp.js"></script>
+    <script type="text/javascript" src="./js/localization.js"></script>
+    <script type="text/javascript" src="./js/data_rate.js"></script>
+    <script type="text/javascript" src="./js/pause.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<div id="port-picker">
+	        <ul>
+	            <li class="port">
+	                <select id="port" title="Port">
+	                    <!-- port list gets generated here -->
+	                </select>
+	            </li>
+	            <li>
+	                <select id="baud" title="Baud Rate">
+	                    <option value="115200" selected="selected">115200</option>
+	                    <option value="57600">57600</option>
+	                    <option value="38400">38400</option>
+	                    <option value="28800">28800</option>
+	                    <option value="19200">19200</option>
+	                    <option value="14400">14400</option>
+	                    <option value="9600">9600</option>
+	                    <option value="4800">4800</option>
+	                    <option value="2400">2400</option>
+	                    <option value="1200">1200</option>
+	                </select>
+	            </li>
+	            <li>
+	                <a class="connect" href="#" i18n="connect"></a>
+	                <label>
+	                    <input class="auto_connect" type="checkbox" />
+	                    <span class="auto_connect" i18n="autoConnect"></span>
+	                </label>
+	            </li>
+	        </ul>
+	    </div>
+	    
+
+		<label>
+	        <select id="period" title="Update Period (ms)">
+	            <option value="100">100</option>
+	            <option value="50" selected="selected">50</option>
+	            <option value="25">25</option>
+	        </select>
+	        
+	        <span id="periodLabel" i18n="period_picker_label"></span>
+        </label>
+
+	    
+	    <!--<a id="options" href="#" i18n_title="options_title"></a>-->
+	
+		<div id='chartContainer'>
+			<a id="pause" href="#" i18n="pause_text"></a>
+			<div id="chartDiv" style="height:100%; width:100%;"></div>
+		</div>
+	
+		<div id="fault"></div>
+	</div>
+	<div id="status-bar">
+	       <div>
+	           <span i18n="statusbar_port_utilization"></span> <span class="port_usage_down">D: 0%</span> <span class="port_usage_up">U: 0%</span>
+	       </div>
+	       <div>
+	           <span i18n="statusbar_period"></span> <span class="statusbar_update_period">Update Period: 0ms</span>
+	           
+	       </div>
+	       <div class="version">
+	           <!-- configuration version generated here -->
+	       </div>
+	</div>
+</body>
+</html>

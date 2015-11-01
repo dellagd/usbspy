@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #303030;
+    background-color: #dfddd0;
+}
+a {
+    color: #303030;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+#main-wrapper {
+    padding: 5px 5px 5px 5px;
+    height: calc(100% + 5px);
+}
+#port-picker {
+    float: left;
+
+    height: 20px;
+    margin-bottom: 5px;
+}
+#port-picker li {
+    float: left;
+}
+#port-picker select {
+    height: 20px;
+    line-height: 20px;
+
+    float: left;
+    margin-right: 5px;
+
+    border: 1px solid silver;
+}
+#port-picker #port {
+    width: 120px;
+}
+#port-picker #baud {
+    width: 80px;
+}
+#port-picker #delay {
+    width: 60px;
+}
+#period {
+	float: right;
+    
+    border: 1px solid silver;
+    width: 80px;   
+}
+#periodLabel {
+	float: right;
+    
+    margin: 3px 5px 0 0;
+}
+
+#pause {
+	position: absolute;
+	display: block;
+	text-align: center;
+	    
+	top: 0;
+	left: 0;
+	width: 60px;
+	margin: 45px 0 0 530px;
+	
+	z-index: 10;
+	
+	border: 1px solid silver;
+	background-color: #FFFF33;
+	font-weight: bold;
+}
+#pause:hover {
+    text-decoration: none;
+    background-color: #FFFFAA;
+}
+#pause.active {
+    background-color: #008000;
+}
+#pause.active:hover {
+    background-color: #4DA64D;
+}
+#port-picker a {
+    float: left;
+
+    display: block;
+
+    width: 80px;
+    height: 18px;
+    border: 1px solid silver;
+
+    line-height: 18px;
+    text-align: center;
+}
+#port-picker a.connect {
+    margin-right: 10px;
+
+    background-color: #be2222;
+    color: white;
+
+    font-weight: bold;
+}
+#port-picker a.connect:hover {
+    text-decoration: none;
+    background-color: #ea3131;
+}
+#port-picker a.connect.active {
+    background-color: #0fab16;
+}
+#port-picker a.connect.active:hover {
+    background-color: #13d81d;
+}
+#port-picker input.auto_connect {
+    float: left;
+
+    margin-top: 4px;
+}
+#port-picker span.auto_connect {
+    float: left;
+
+    margin: 3px 0 0 5px;
+}
+#fault
+{
+  font-size: 48px;
+  font-style: bold;
+  color: #FFF;
+  text-align: center;
+  
+  height:100px;
+  line-height: 100px;
+  border:2px solid #C0C0C0;
+  background-color: #444444;
+  
+  margin-top: 20px;
+}
+#status-bar {
+    position: fixed;
+
+    bottom: 0px;
+
+    width: calc(100% - 20px);
+    height: 20px;
+    line-height: 20px;
+
+    padding: 0 10px 0 10px;
+
+    border-top: 1px solid #7d7d79;
+    background-color: #bfbeb5;
+}
+#status-bar div {
+    float: left;
+
+    padding-right: 10px;
+    margin-right: 10px;
+
+    border-right: 1px solid #7d7d79;
+}
+#status-bar .version {
+    float: right;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
